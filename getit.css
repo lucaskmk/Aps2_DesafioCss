@@ -78,6 +78,64 @@ body {
   border-radius: 6px; 
   box-shadow: 0px 4px 10px -2px rgba(0, 0, 0, 0.2); /* Bottom shadow */
 }
+.card-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  padding: 1.5rem;
+  justify-content: space-evenly;
+}
+.card{
+  width: 15rem;
+  height: 7.5rem;
+  background-color:#ffeb3b;
+  padding: 0.5rem;
+  box-shadow: 0.1875rem 0.1875rem 0.3125rem rgba(0, 0, 0, 0.2);
+  border-radius: 0.3125rem;
+  transform: rotate(calc(-3deg + 6deg * random()));
+  position: relative;
+  transition: transform 0.2s ease-in-out;
+  justify-content: space-between;
+  flex-direction: column;
+  
+}
+.card:nth-child(odd) {
+  transform: rotate(-3deg);
+}
+
+.card:nth-child(even) {
+  transform: rotate(3deg);
+}
+
+.card:nth-child(3n) {
+  transform: rotate(-2deg);
+}
+
+.card:nth-child(4n) {
+  transform: rotate(2deg);
+}
+
+.card:nth-child(6n + 1) { background-color: #f7d736; } /* Amarelo vibrante */
+.card:nth-child(6n + 2) { background-color: #ead3a7; } /* Bege claro */
+.card:nth-child(6n + 3) { background-color: #9de0f5; } /* Azul claro */
+.card:nth-child(6n + 4) { background-color: #ef89ba; } /* Rosa */
+.card:nth-child(6n + 5) { background-color: #fae890; } /* Amarelo pastel */
+.card:nth-child(6n + 6) { background-color: #abe9c1; } /* Verde claro */
+.card-title{
+  font-family: "Permanent Marker", cursive;
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  
+}
+.card-content{
+  font-family: "Permanent Marker", cursive;
+  display: flex;
+  font-size: 0.875rem;
+  font-weight: 1;
+  align-items: center;
+  justify-content: center;
+}
 
 /* Você pode usar o CSS comentado abaixo, se ajudar */
 /* Fonte: https://codepen.io/CrisWoler/pen/ogXBLj */
