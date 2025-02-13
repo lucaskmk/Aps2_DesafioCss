@@ -88,39 +88,66 @@ body {
 .card{
   width: 15rem;
   height: 7.5rem;
-  background-color:#ffeb3b;
-  padding: 0.5rem;
+  padding: 0.3rem;
   box-shadow: 0.1875rem 0.1875rem 0.3125rem rgba(0, 0, 0, 0.2);
   border-radius: 0.3125rem;
-  transform: rotate(calc(-3deg + 6deg * random()));
   position: relative;
   transition: transform 0.2s ease-in-out;
   justify-content: space-between;
   flex-direction: column;
   
 }
-.card:nth-child(odd) {
+.card-color-1{
+  background-color:#ead3a7;
+}
+.card-color-2{
+  background-color:#9de0f5;
+}
+.card-color-3{
+  background-color:#ef89ba;
+}
+.card-color-4{
+  background-color:#fae890;
+}
+.card-color-5{
+  background-color:#abe9c1;
+}
+
+.card-rotation-1{
   transform: rotate(-3deg);
 }
-
-.card:nth-child(even) {
-  transform: rotate(3deg);
-}
-
-.card:nth-child(3n) {
+.card-rotation-2{
   transform: rotate(-2deg);
 }
-
-.card:nth-child(4n) {
+.card-rotation-3{
+  transform: rotate(-1deg);
+}
+.card-rotation-4{
+  transform: rotate(0deg);
+}
+.card-rotation-5{
+  transform: rotate(-4deg);
+}
+.card-rotation-6{
+  transform: rotate(-5deg);
+}
+.card-rotation-7{
+  transform: rotate(1deg);
+}
+.card-rotation-8{
   transform: rotate(2deg);
 }
+.card-rotation-9{
+  transform: rotate(3deg);
+}
+.card-rotation-10{
+  transform: rotate(4deg);
+}
+.card-rotation-11{
+  transform: rotate(5deg);
+}
 
-.card:nth-child(6n + 1) { background-color: #f7d736; } /* Amarelo vibrante */
-.card:nth-child(6n + 2) { background-color: #ead3a7; } /* Bege claro */
-.card:nth-child(6n + 3) { background-color: #9de0f5; } /* Azul claro */
-.card:nth-child(6n + 4) { background-color: #ef89ba; } /* Rosa */
-.card:nth-child(6n + 5) { background-color: #fae890; } /* Amarelo pastel */
-.card:nth-child(6n + 6) { background-color: #abe9c1; } /* Verde claro */
+
 .card-title{
   font-family: "Permanent Marker", cursive;
   font-size: 1.4rem;
@@ -135,6 +162,7 @@ body {
   font-weight: 1;
   align-items: center;
   justify-content: center;
+  color: rgb(59, 57, 57);
 }
 
 /* Você pode usar o CSS comentado abaixo, se ajudar */
