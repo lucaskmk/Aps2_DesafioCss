@@ -26,6 +26,58 @@ html,
 body {
   font-family: "Roboto", sans-serif;
 }
+.appbar{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 0.5rem;
+  background-color: #ffd22f;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+
+}.logo{
+  width: 5.5%;
+}
+.subtitle{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 30%; 
+  padding: 0.5rem;
+  background-color: #ffffff; 
+  border-radius: 8px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+  margin: 20px; 
+}
+.form-card input{
+  font-size: larger;
+  padding-bottom: 0.8rem;
+  border: 0;
+}
+.form-card textarea{
+  border: 0;
+  resize: none;
+}
+.form-card button{
+  border: 0;
+  background-color: #ffd22f; 
+  height: 2.5rem;
+  border-radius: 6px; 
+  box-shadow: 0px 4px 10px -2px rgba(0, 0, 0, 0.2); /* Bottom shadow */
+}
 
 /* Você pode usar o CSS comentado abaixo, se ajudar */
 /* Fonte: https://codepen.io/CrisWoler/pen/ogXBLj */
